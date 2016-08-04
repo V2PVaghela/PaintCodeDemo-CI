@@ -33,14 +33,14 @@ class ViewControllerUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    /*func testTapNumberButtonIncrementsScore() {
+    func testTapNumberButtonIncrementsScore() {
         let app = XCUIApplication()
         let numberButton = app.buttons["numberButton"]
         
         numberButton.tap()
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "1")
-    }*/
+    }
     
     func testTapNumberButtonTwiceIncrementsTo2() {
         let app = XCUIApplication()
@@ -49,6 +49,6 @@ class ViewControllerUITests: XCTestCase {
         numberButton.tap()
         numberButton.tap()
         let newScore = numberButton.label
-        XCTAssertEqual(newScore, "2")
+        XCTAssertEqual(newScore, "3")
     }
 }
